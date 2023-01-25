@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+.profile-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: #F5F5F5;
+    overflow: hidden;
+}
+
+.info-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    width: 100%;
+    background-color: white;
+    padding: 40px;
+    margin-top: 100px;
+    height: 320px;
+    position: relative;
+}
+
+.setting-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-10px,20px);
+}
+
+.info-img{
+    overflow: hidden;
+    
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    margin-right: 10px;
+}
+
+.card-img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.info-img > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.font-Raleway{
+    font-family: 'Raleway', sans-serif;
+}
+
+.info-info{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5px;
+    flex-direction: column;
+}
+
+
+.info-info > div > h1{
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: -0.019em;
+    text-transform: capitalize;
+    color: #000000;
+}
+
+.info-info > div > h3{
+    font-weight: 600;
+    font-size: 24px;
+    color: #0075FF;
+}
+
+.info-info > p{
+    font-weight: 600;
+    font-size: 24px;
+    color: #575757;
+    letter-spacing: -0.019em;
+    max-width: 600px;
+}
+
+.info-contact{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-contact > h1{
+    font-weight: 600;
+    font-size: 24px;
+    color: #000000;
+}
+
+.info-div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info-div > div{
+    background: rgba(245, 245, 245, 0.67);
+    border: 1px solid #9A999A;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    width: 350px;
+    height: 50px;
+}
+
+.info-div > div> p{
+    text-align: start;
+    justify-self: flex-start;
+    width: 100%;
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #575757;
+} 
+
+
+.infocard-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 10px;
+}
+
+
+.text{
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: -0.019em;
+    color: #2E2E2E;
+    width: 100%;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.text > h4{
+    background-color: #F5F5F5;
+}
+
+.text::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #9A999A;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.cart-container{
+    display: grid;
+    align-items: center;
+    align-content: center;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    padding: 0px 20px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 40px;
+    gap: 24px;
+    background: #FFFFFF;
+    border: 1px solid #DEDEDE;
+    border-radius: 20px;
+    max-width: 350px;
+}
+
+.name{
+    font-weight: 600;
+    font-size: 20px;
+    color: #2E2E2E;
+}
+
+.date{
+    font-weight: 600;
+    font-size: 18px;
+    color: #7C797A;
+}
+
+.content > p{
+    font-weight: 600;
+    font-size: 17px;
+    color: #7C797A;
+    /* max-width: 300px; */
+    padding: 10px 0;
+}
+
+.content > h1{
+    font-weight: 600;
+    font-size: 24px;
+    color: #2E2E2E;
+}
+
+.content > div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.prix{
+    font-weight: 600;
+    font-size: 20px;
+    color: #575757;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+
+.pres-info{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.pres-info > img{
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translateY(10px);
+}
