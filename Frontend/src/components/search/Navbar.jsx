@@ -1,6 +1,6 @@
 import {useState} from 'react'
 import React from 'react'
-import {close, menu, search} from '../assets'
+import {close, menu, search} from '../../img/icons/index'
 import {ChatBubbleOvalLeftIcon, BookmarkIcon, ChevronDownIcon} from '@heroicons/react/24/outline'
 
 const Navbar = () => {
