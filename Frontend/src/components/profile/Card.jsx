@@ -1,17 +1,61 @@
 import React, {useState} from 'react'
-import { IoClose } from 'react-icons/io5'
+import Box from '@mui/material/Box';
+import Modal from '@mui/material/Modal';
 
 /* ==========imges========= */
 import efface from '../../img/icons/eff.png'
 import max from '../../img/icons/max.png'
 import './profile.css'
 import profile from '../../img/profile.jpg'
-import Button from '../Button'
 
 export default function Card() {
-   
-    const [open, setOpen] = useState(false);
+    const style = {
+        position: 'absolute',
+        top: '50%',
+        left: '50%',
+        transform: 'translate(-50%, -50%)',
+        bgcolor: 'background.paper',
+        bradius: 20,
+        borderRadius: '20px',
+        boxShadow: 24,
+      };
     
+
+    const [open, setOpen] = useState(false);
+
+    const handleOpen = () => {
+        setOpen(true);
+    };
+    const handleClose = () => {
+        setOpen(false);
+    };
+
+    const CardModal = () =>{
+        <>
+            <Modal
+            hideBackdrop
+            open={open}
+            onClose={handleClose}
+            aria-labelledby="child-modal-title"
+            aria-describedby="child-modal-description"
+            className='blur-color '
+            >
+            <Box sx={{ ...style, width: 600 }}>
+                <div className='bg-[#FCBB14] text-center py-2 rounded-t-[20px]'>
+                    <h2 id="child-modal-title" className='font-Raleway text-[28px] font-bold text-white capitalize'>Supprimer une annonce</h2>
+                </div>
+                <p className='font-Raleway text-[28px] mt-4 text-[#1e1e1e] text-center capitalize font-semibold p-4'>étes-vous sur de voulior supprimer votre annonce</p>
+                <div className='font-Raleway flex items-center justify-center gap-10 py-4 text-[20px] font-bold'>
+                    <button className='bg-[#fcbb14] px-[30px] py-[6px] text-white rounded-[10px]'>Confirmer</button>
+                    <button className='px-[30px] py-[6px] bg-white text-[#fcbb14] border-[1px] border-solid border-[#fcbb14] rounded-[10px]' onClick={handleClose}>Annuler</button>
+                </div>
+            </Box>
+        </Modal> 
+    </>
+    }
+
+
+
   return (
     <div className="card">
     <div>
@@ -30,31 +74,10 @@ export default function Card() {
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui voluptatem ab tempora quasi! Reprehenderit, tempore!</p>
             <div>
                 <button className='prix'>3000 DA</button>
-                <img src={efface} className='cursor-pointer' alt="" onClick={() => setOpen(true)}/>
+                <img src={efface} className='cursor-pointer' alt="" onClick={handleOpen}/>
             </div>
         </div>
-        
-        {open && (
-            <section className="modal-parent">
-                <article className='close-modal'>
-                    <header>
-                        <p>Supprimer une annonce</p>
-                        <IoClose className='icon' onClick={() => setOpen(false)} /> 
-                    </header>
-
-                    <div className="main-modal-body">
-                        <p>Êtes-vous sûr de vouloir supprimer cette annonce ?</p>
-                    </div>
-
-                    <div className="buttons">
-                        <Button btnText='Confirmer' />
-                        <div className="close-container" onClick={() => setOpen(false)}>
-                            <Button btnText='Annuler' outline />
-                        </div>
-                    </div>
-                </article>
-            </section>
-        )}
+        <CardModal/>
     </div>
 </div>
   )

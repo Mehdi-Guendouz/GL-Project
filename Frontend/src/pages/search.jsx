@@ -5,7 +5,7 @@ import Navbar from '../components/search/Navbar'
 import Filters from '../components/search/Filters'
 import Results from '../components/search/Results'
 
-const Search = () => {
+const search = () => {
   return (
     
     <div className='font-Raleway font-semibold bg-gray3 w-full overflow-hidden'>
@@ -21,4 +21,4 @@ const Search = () => {
   )
 }
 
-export default Search
+export default search

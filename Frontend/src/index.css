@@ -10,8 +10,3 @@
 .blur-color{
     background-color: rgb(245, 245, 245, 0.9);
 }
-
-
-.box-shadow-profile{
-    box-shadow: 0px 10px 35px rgba(46, 46, 46, 0.02);
-}

@@ -4,7 +4,6 @@ import {PhoneIcon, ClipboardIcon, EnvelopeIcon, MapPinIcon} from '@heroicons/rea
 import school from '../../img/school.jpg'
 import { useState } from 'react'
 
-
 const Details = () => {
     const [toggle, settoggle] = useState(false);
   return (

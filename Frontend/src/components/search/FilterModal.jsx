@@ -3,9 +3,9 @@ import { categories, communes, cours, wilayas } from './constants'
 import BasicSelect from './Select'
 import RadioButtons from './Radio'
 
-const Filters = () => {
+const FilterModal = () => {
   return (
-    <div className='lg2:flex hidden flex-col space-y-8 md:w-[16%] sm:w-[50%] text-dark items-start'>
+    <div className='flex-col space-y-8 text-dark items-start w-[320px] px-6 py-4'>
       <p>Filtrer les résultats</p>
       <BasicSelect name='Catégorie' list={categories}/>
       <BasicSelect name='Cours' list={cours}/>
@@ -17,4 +17,4 @@ const Filters = () => {
   )
 }
 
-export default Filters
+export default FilterModal

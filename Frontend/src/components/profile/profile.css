@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-
 .profile-container{
     display: flex;
     align-items: center;
@@ -12,13 +10,15 @@
 }
 
 .info-container{
-    /* display: flex; */
+    display: flex;
     align-items: center;
     justify-content: center;
     gap: 24px;
+    width: 100%;
     background-color: white;
-    margin-top: 50px;
-    /* height: 320px; */
+    padding: 40px;
+    margin-top: 100px;
+    height: 320px;
     position: relative;
 }
 
@@ -34,6 +34,11 @@
     
 }
 
+.profile-img {
+    width: 200px;
+    height: 200px;
+    margin-right: 10px;
+}
 
 .card-img {
     width: 80px;
@@ -55,6 +60,7 @@
 
 .info-info{
     display: flex;
+    align-items: flex-start;
     justify-content: center;
     gap: 5px;
     flex-direction: column;
@@ -63,6 +69,7 @@
 
 .info-info > div > h1{
     font-weight: 600;
+    font-size: 40px;
     letter-spacing: -0.019em;
     text-transform: capitalize;
     color: #000000;
@@ -70,11 +77,13 @@
 
 .info-info > div > h3{
     font-weight: 600;
+    font-size: 24px;
     color: #0075FF;
 }
 
 .info-info > p{
     font-weight: 600;
+    font-size: 24px;
     color: #575757;
     letter-spacing: -0.019em;
     max-width: 600px;
@@ -82,7 +91,7 @@
 
 .info-contact{
     display: flex;
-    /* align-items: flex-start; */
+    align-items: flex-start;
     justify-content: space-evenly;
     flex-direction: column;
     gap: 20px;
@@ -90,6 +99,7 @@
 
 .info-contact > h1{
     font-weight: 600;
+    font-size: 24px;
     color: #000000;
 }
 
@@ -107,8 +117,8 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 10px;
-    /* width: 350px;
-    height: 50px; */
+    width: 350px;
+    height: 50px;
 }
 
 .info-div > div> p{
@@ -117,7 +127,7 @@
     width: 100%;
     margin-left: 10px;
     font-weight: 600;
-    /* font-size: 18px; */
+    font-size: 20px;
     color: #575757;
 } 
 
@@ -135,19 +145,16 @@
 
 .text{
     font-weight: 600;
-    font-size: 22px;
+    font-size: 24px;
     letter-spacing: -0.019em;
     color: #2E2E2E;
     width: 100%;
     padding: 10px 20px;
     position: relative;
-    z-index: 10;
 }
 
 .text > h4{
     background-color: #F5F5F5;
-    width: fit-content;
-    padding: 0 15px;
 }
 
 .text::before{
@@ -159,13 +166,13 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    z-index: -10;
 }
 
 .cart-container{
-
+    display: grid;
     align-items: center;
     align-content: center;
+    grid-template-columns: repeat(3,1fr);
     gap: 20px;
     padding: 0px 20px;
 }
