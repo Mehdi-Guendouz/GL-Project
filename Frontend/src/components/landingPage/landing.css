@@ -5,7 +5,7 @@
     font-family: 'Raleway', sans-serif;
 }
 
-.container{
+.container-landing{
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -14,6 +14,7 @@
     /* background-color: blue; */
     background: url('../../img/Landing\ page.png') no-repeat ;
     background-size: cover;
+    background-position: center;
 }
 
 .nav-bar{

@@ -1,14 +1,21 @@
 import React from "react";
-import ModifieProfile from "./components/profile/ModifieProfile";
+import {BrowserRouter , Routes , Route} from 'react-router-dom'
 import Landing from './components/landingPage/Landing';
-import Profile from "./components/profile/Profile";
+import GlobalProfile from "./pages/GlobalProfile";
+import ProfileDetails from "./pages/ProfileDetails";
+import Search from "./pages/Search";
 
 function App() {
   return (
     <div className="App">
-      <Landing/>
-      {/* <Profile/> */}
-      {/* <ModifieProfile/> */}
+      <BrowserRouter>
+        <Routes>
+            <Route  path="/" element={<Landing />}/>
+            <Route  path="/Search" element={<Search />}/>
+            <Route  path="/profile" element={<GlobalProfile />}/>
+            <Route  path="/details" element={<ProfileDetails />}/>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

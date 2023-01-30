@@ -5,13 +5,15 @@ import { CheckIcon, ChevronUpDownIcon } from '@heroicons/react/24/solid'
 const categories = [
     { name: '-' },
     { name: 'Primaire' },
-    { name: 'CEM' },
+    { name:  'cem'},
     { name: 'LYCEE' },
   ];
 
+
+
   export default function ListboxCateg() {
     const [selected, setSelected] = useState(categories[0])
-
+    
     return (
         <div className='w-full h-[140px]'>
             <Listbox value={selected} onChange={setSelected}>
