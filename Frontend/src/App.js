@@ -5,6 +5,7 @@ import GlobalProfile from "./pages/GlobalProfile";
 import ProfileDetails from "./pages/ProfileDetails";
 import Search from "./pages/Search";
 
+
 function App() {
   return (
     <div className="App">
@@ -16,6 +17,7 @@ function App() {
             <Route  path="/details" element={<ProfileDetails />}/>
         </Routes>
       </BrowserRouter>
+
     </div>
   );
 }
