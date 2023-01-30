@@ -4,6 +4,20 @@ module.exports = {
   darkMode: 'class',
 
   theme: {
+
+    screens: {
+      'sm': '640px',
+      'sm2': '620px',
+      'md': '768px',
+      'md2': '880px',
+      'lg': '1024px',
+      'lg2': '1152px',
+
+      'xl': '1280px',
+
+      '2xl': '1536px',
+    },
+
     extend: {
       fontFamily: {
         Raleway: ['Raleway', 'serif'],

@@ -37,7 +37,7 @@ const Card = () => {
     };
   return (
     <div>
-        <div className='flex flex-col justify-start space-y-4 border-[1px] border-gray1 w-[280px] px-6 py-4 bg-white rounded-[12px] cursor-pointer hover:drop-shadow-xl hover:shadow-dark/50 ease-in-out duration-1000'>
+        <div className='flex flex-col sm:justify-start space-y-4 border-[1px] border-gray1 w-[280px] px-6 py-4 bg-white rounded-[12px] cursor-pointer hover:drop-shadow-xl hover:shadow-dark/50 ease-in-out duration-1000'>
             <div onClick={handleOpen} className='flex items-center justify-between'>
                 <div className='flex space-x-4'>
                     <div className='bg-gray1 rounded-3xl w-8 h-8'></div>
