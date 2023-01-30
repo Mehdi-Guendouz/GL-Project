@@ -1,5 +1,6 @@
 import React from 'react'
 import './landing.css'
+import { GoogleLoginButton } from "react-social-login-buttons";
 
 export default function Landing() {
   return (
@@ -8,7 +9,7 @@ export default function Landing() {
             <h1 className='text-[18px]'>logo</h1>
             <div>
                 {/* <button className='btn btn-lg'>S’inscrire</button> */}
-                <button className='btn btn-sg'>Se connecter</button>
+                <GoogleLoginButton onClick={() => alert("Hello")} />
             </div>
         </nav>
     </div>
