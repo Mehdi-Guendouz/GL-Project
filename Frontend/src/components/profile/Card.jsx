@@ -43,7 +43,7 @@ export default function Card() {
                     </header>
 
                     <div className="main-modal-body">
-                        <p>Êtes-vous sûr de vouloir supprimer cette annonce ?</p>
+                        <p>Êtes-vous sûr de vouloir supprimer cette annonce?</p>
                     </div>
 
                     <div className="buttons">
